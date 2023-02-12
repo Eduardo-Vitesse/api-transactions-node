@@ -10,8 +10,7 @@ afterAll( async () => {
     await app.close()
 })
 
-test('O usuário consegue criar uma nova transação', async () => {
-    console.log('chegou 1');
+test('user can create a new transaction', async () => {
     const response = await request(app.server)
         .post('/transactions')
         .send({
